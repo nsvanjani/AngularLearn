@@ -4,7 +4,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     template: ` <!--<input name ='nameInput' [(ngModel)]="name">-->
     <input type="text" (input) = "onUserInput($event)" [value]="name">
     <p>Hello {{ name }} I am the html</p>
-    <p [textContent]="name"></p>`
+    <p [textContent]="name"></p>
+    <app-user-detail></app-user-detail>
+    `
 })
 export class UserComponent {
 
